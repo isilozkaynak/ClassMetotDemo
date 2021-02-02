@@ -8,8 +8,8 @@ namespace ClassMetotDemo
         {
             Musteri musteri1 = new Musteri();
             musteri1.Id = 111;
-            musteri1.Ad = "Isil";
-            musteri1.Soyad = "Ozkaynak";
+            musteri1.Ad = "Fatma";
+            musteri1.Soyad = "Oz";
             musteri1.Telefon = "123456789";
             musteri1.ParaMiktari = 100.000;
 
@@ -27,6 +27,7 @@ namespace ClassMetotDemo
             musteri3.Telefon = "543219876";
             musteri3.ParaMiktari = 75.500;
 
+            Musteri[] musteriler = new Musteri[] { musteri1, musteri2, musteri3 };
          
 
             MusteriManager musterimanager = new MusteriManager();
@@ -47,8 +48,7 @@ namespace ClassMetotDemo
 
 
             Console.WriteLine("Goruntule fonksiyonu:");
-            musterimanager.Goruntule(musteri1);
-            musterimanager.Goruntule(musteri2);
+            musterimanager.Goruntule(musteriler);
         }
     }
 }

@@ -33,14 +33,12 @@ namespace ClassMetotDemo
             Console.WriteLine("Guncelleme işlemi bitti.");
         }
 
-        public void Goruntule(Musteri musteri)
+        public void Goruntule(Musteri[] musteriler)
         {
-            Console.WriteLine("Musteri Id= " + musteri.Id 
-                + ", Musteri adi= " + musteri.Ad 
-                + ", Musteri soyadi= " + musteri.Soyad
-                + ", Musteri telefon= " + musteri.Telefon
-                + ", Musteri para miktari=  " + musteri.ParaMiktari
-                );
+            for (int i = 0; i < musteriler.Length; i++)
+            {
+                Console.WriteLine(musteriler[i].Ad + " " + musteriler[i].Soyad);
+            }
         }
     }
 }
