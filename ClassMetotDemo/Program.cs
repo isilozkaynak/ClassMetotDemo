@@ -27,6 +27,7 @@ namespace ClassMetotDemo
             musteri3.Telefon = "543219876";
             musteri3.ParaMiktari = 75.500;
 
+            Musteri[] musteriler = new Musteri[] { musteri1, musteri2, musteri3 };
          
 
             MusteriManager musterimanager = new MusteriManager();
@@ -47,8 +48,7 @@ namespace ClassMetotDemo
 
 
             Console.WriteLine("Goruntule fonksiyonu:");
-            musterimanager.Goruntule(musteri1);
-            musterimanager.Goruntule(musteri2);
+            musterimanager.Goruntule(musteriler);
         }
     }
 }
